@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .nav{
@@ -35,16 +35,29 @@ a{
     color: #333333;
     font-weight: bold;
 }
+.flower{
+    width: 60px;
+    height: auto;
+}
+.header-container{
+    background-color: #EAD2FF;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    transition: background-color 0.3s ease; 
+}
 
 .container{
     text-align: center;
     margin: 240px 0;
+    position: relative;
 }
 
 h1{
-    font-size: 20vh;
+    font-size: 120px;
     font-weight: 300;
     font-family: 'Nunito Sans', sans-serif;
+    margin:0;
 }
 
 h2{
@@ -66,11 +79,15 @@ h4{
     font-family: 'Lato', sans-serif;
 
 }
+.arrow-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align the arrow to the right */
+    width: 90%; /* Ensure it takes the full width of the container */
+}
 
-.arrow{
+.arrow {
     width: 60px;
-    position: absolute;
-    right: 323px;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .line{
@@ -140,3 +157,4 @@ h4{
     height: 70px;
     margin: 20px;
 }
+
