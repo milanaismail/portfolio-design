@@ -38,6 +38,7 @@ a{
 .flower{
     width: 60px;
     height: auto;
+    animation: rotate 5s linear infinite;
 }
 .header-container{
     background-color: #EAD2FF;
@@ -182,6 +183,10 @@ h4{
     width: 60px;
     height: 60px;
     margin: 20px;
+    transition: transform 0.3s ease;
+    animation: rotate 5s linear infinite;
+    animation-play-state: paused; /* Start in a paused state */
+    transform-origin: center; 
 }
 
 .skills {
@@ -211,6 +216,14 @@ h4{
     margin-right: 15px;
 }
 
+.icon:hover {
+    animation: rotate 5s linear infinite;
+}
+
+.icon:hover {
+    animation-play-state: running;
+}
+
 @keyframes marquee {
     0% {
         transform: translateX(0%);
@@ -218,4 +231,21 @@ h4{
     100% {
         transform: translateX(-50%);
     }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flower-link:hover .flower {
+    animation-play-state: paused;
+}
+
+.flower.no-rotate {
+    animation: none; /* Disable rotation for the logo */
 }
