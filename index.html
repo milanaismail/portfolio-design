@@ -35,76 +35,33 @@
             </div>
         </div>      
     </div>
-        <h2>Recent Projects</h2>
-        <div class="projects">
-            <div class="line"></div>
-            <div class="project" onclick="goToProject('projects/project-1/index.html')">
-                <div class="project-content">
-                    <h3>Speech quiz</h3>
-                    <div class="skills">
-                        <h4>Tech skills</h4>
-                        <p>P5js</p>
-                    </div>
-                    <p>
-                        Speech to text and text to speech quiz.
-                    </p>
-                </div>
-                <div class="project-image">
-                    <img src="images/project-1.png">
-                </div>
-            </div>
-            <div class="line"></div>
 
-            <div class="project" onclick="goToProject('projects/project-2/index.html')">
-                <div class="project-content">
-                    <h3>Flower garden</h3>
-                    <div class="skills">
-                        <h4>Tech skills</h4>
-                        <p>P5js</p>
-                    </div>
-                    <p>
-                        An interactive mini game with tracking your body.                    </p>
-                </div>
-                <div class="project-image">
-                    <img src="images/project-2.png">
-                </div>
+    <div class="projects">
+        <div class="project" data-url="projects/project-1/index.html" data-image="images/mockup-1.png" data-title="Voice activated quiz" data-overlay="JavaScript">
+            <div class="project-image">
+                <div class="overlay"><span>JavaScript</span></div>
             </div>
-            <div class="line"></div>
-
-            <div class="project" onclick="goToProject('projects/project-3/index.html')">
-                <div class="project-content">
-                    <h3>Picture regocniser</h3>
-                    <div class="skills">
-                        <h4>Tech skills</h4>
-                        <p>P5js</p>
-                    </div>
-                    <p>
-                        An interactive mini game which gives a description of pictures.                    </p>
-                </div>
-                <div class="project-image">
-                    <img src="images/project-3.png">
-                </div>
-            </div>
-            <div class="line"></div>
-
-            <div class="project" onclick="goToProject('projects/project-4/index.html')">
-                <div class="project-content">
-                    <h3>Roll the dice</h3>
-                    <div class="skills">
-                        <h4>Tech skills</h4>
-                        <p>P5js</p>
-                    </div>
-                    <p>
-                        Roll the dice by shaking your device. 
-                    </p>
-                </div>
-                <div class="project-image">
-                    <img src="images/project-4.png">
-                </div>
-            </div>
-            <div class="line"></div>
-
+            <h3></h3>
         </div>
+        <div class="project" data-url="projects/project-2/index.html" data-image="images/mockup-2.png" data-title="Flower garden" data-overlay="P5.js">
+            <div class="project-image">
+                <div class="overlay"><span>P5.js</span></div>
+            </div>
+            <h3></h3>
+        </div>
+        <div class="project" data-url="projects/project-3/index.html" data-image="images/mockup-3.png" data-title="I spy with my little eye" data-overlay="P5.js">
+            <div class="project-image">
+                <div class="overlay"><span>P5.js</span></div>
+            </div>
+            <h3></h3>
+        </div>
+        <div class="project" data-url="projects/project-4/index.html" data-image="images/mockup-4.png" data-title="Roll a dice" data-overlay="P5.js">
+            <div class="project-image">
+                <div class="overlay"><span>P5.js</span></div>
+            </div>
+            <h3></h3>
+        </div>
+    </div>
 
         <div class="about-me">
             <h2>About me</h2>
@@ -143,10 +100,5 @@
                 </div>
             </div>
         </div>
-        <script>
-             function goToProject(projectFile) {
-            window.location.href = projectFile;
-        }
-        </script>
 </body>
 </html>

@@ -20,3 +20,25 @@ document.addEventListener('DOMContentLoaded', function() {
         headerContainer.style.backgroundColor = '#EAD2FF'; // Revert background color when not hovered
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const projects = document.querySelectorAll('.project');
+
+    projects.forEach(project => {
+        const imageUrl = project.getAttribute('data-image');
+        const title = project.getAttribute('data-title');
+        const overlayText = project.getAttribute('data-overlay');
+        const url = project.getAttribute('data-url');
+
+        project.querySelector('.project-image').style.backgroundImage = `url(${imageUrl})`;
+        project.querySelector('h3').innerText = title;
+
+        if (overlayText) {
+            project.querySelector('.overlay span').innerText = overlayText;
+        }
+
+        project.addEventListener('click', () => {
+            window.location.href = url;
+        });
+    });
+});

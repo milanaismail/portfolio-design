@@ -45,6 +45,7 @@ a{
     position: relative;
     height: 100vh;
     transition: background-color 0.3s ease; 
+    margin-bottom: 104px;
 }
 
 .container{
@@ -89,40 +90,54 @@ h4{
     width: 60px;
     height: auto; /* Maintain aspect ratio */
 }
-
-.line{
-    background-color: rgba(51,51,51,0.4);
-    width: 100%;
-    height: 1px;
-    display: block;
-}
-.project{
+.projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height: 300px;
+    text-align: center;
 }
-
-
-.project-content {
+.project{
     margin: 0 70px;
 
 }
-
 .project-image{
-    height: 100%;
-    width: 100%;  /* Ensure it covers the full width of the grid cell */
+    width: auto;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
     overflow: hidden;
-    position: relative; 
+}
+.project:hover .project-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.overlay span {
+    font-size: 24px; /* Adjust the font size */
+    font-family: 'Lato', sans-serif; /* Use a specific font */
+    text-transform: uppercase; /* Make the text uppercase */
+    border: 2px solid #F9F9F9; /* Add a border */
+    border-radius: 20px;
+    padding: 20px;
 }
 
-.project-image img {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-    z-index: -1;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.7); /* semi-transparent overlay */
+    color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.project-image:hover .overlay {
+    opacity: 1;
+    z-index: 1;
 }
 
 .skills p, .skills h4{
