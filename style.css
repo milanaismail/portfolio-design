@@ -146,31 +146,41 @@ h4{
 }
 
 .about-me-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     margin: 0 70px;
-    gap: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .about-me{
-    padding: 136px 0;
+    padding-top: 80px;
+    background-color: #FFFED6;  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
 
-.connect{
-    padding: 136px 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.about-me h2{
+    text-align: center;
 }
+
+.about-me-content p span {
+    display: block; /* Make spans block elements */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
 
 .about-me-content p{
     margin: 0;
+    font-size: 28px;
+    width: 70%
 }
 
 .icon{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 20px;
 }
 
