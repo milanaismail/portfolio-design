@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: #F9F9F9;
     margin: 0;
@@ -252,3 +255,4 @@ h4{
 .flower.no-rotate {
     animation: none; /* Disable rotation for the logo */
 }
+
