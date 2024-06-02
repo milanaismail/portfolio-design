@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.nav{
+    margin-bottom:80px;
+    width: 70%;
+}
+
+#Elements{
+    width: 120px;
+    height:auto;
+}
+h1{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+}
+
+h2{
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 48px 0;
+    font-size: 40px;
+}
+
+h3{
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+li{
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+.flower{
+    width: 120px;
+    height: auto;
+    animation: rotate 5s linear infinite;
+}
+.header-container{
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s ease; 
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 0;
+    background-color: #C9E5FF;
+    height: 100vh;
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+.project-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.skills p {
+    font-family: 'Lato', sans-serif; /* Use a specific font */
+    text-transform: uppercase; /* Make the text uppercase */
+    border: 2px solid #333333; /* Add a border */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px; 
+    display: inline-block;
+}
+
+.project-description{
+    width: 70%;
+    text-align: center;
+    margin: 120px auto;
+    text-align: left;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0;
+
+}
+
+.project-description p span{
+   margin-bottom: 12px;
+   display: block;
+}
+
+.project-description-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.project-description-box h3{
+ text-align: center;
+}
+
+.box{
+    width: 400px;
+    height: 280px;
+    background-color: #FFFED6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.research-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 120px auto;
+    width: 100%;
+    background-color: #FFF1F1;
+    flex-direction: column;
+    padding: 48px 0;
+}
+
+.research{
+    width: 70%;
+}
+
+.moodboard-image img{
+    width: 600px;
+    height: auto;
+}
+
+.design-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 120px auto;
+    width: 70%;
+    flex-direction: column;
+    padding: 48px 0;
+}
+
+.wireframe-images img{
+    width: 600px;
+    height: auto;
+}
+
+.wireframe-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.low-fi-prototype-images img, .high-fi-prototype-images img{
+    width: 300px;
+    height: 900px;
+}
+
+.low-fi-prototype-images, .high-fi-prototype-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.wireframe-container, .low-fi-container{
+    margin-bottom: 80px;
+}
+
+.final-product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    margin: 120px auto 0 auto;
+    width: 100%;
+    padding: 48px 0;
+    background-color: #F4F4F4;
+}
+
+.final-product-text{
+    width: 70%;
+    text-align: left;
+}
+
+.final-product-text h2{
+    text-align: center;
+}
+
+.final-product-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.final-product-images img{
+    width: 600px;
+    height: auto;
+}
