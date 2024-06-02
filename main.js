@@ -35,8 +35,18 @@ document.addEventListener('DOMContentLoaded', function() {
         project.querySelector('.project-image').style.backgroundImage = `url(${imageUrl})`;
         project.querySelector('h3').innerText = title;
 
+        // If data-overlay attribute exists, split the text and create span elements
         if (overlayText) {
-            project.querySelector('.overlay span').innerText = overlayText;
+            const overlayContainer = project.querySelector('.overlay');
+            const overlayTexts = overlayText.split(', '); // Assuming multiple values are comma-separated
+
+            overlayContainer.innerHTML = ''; // Clear existing overlay content
+
+            overlayTexts.forEach(text => {
+                const span = document.createElement('span');
+                span.innerText = text;
+                overlayContainer.appendChild(span);
+            });
         }
 
         project.addEventListener('click', () => {
@@ -44,4 +54,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
