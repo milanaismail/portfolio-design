@@ -324,7 +324,7 @@ h4{
     .hamburger__nav{
         display: flex;
         justify-content: space-between;
-        padding: 46px 25px;
+        padding: 46px 25px 25px 25px;
         align-items: center;
     }
     .fas.fa-bars{

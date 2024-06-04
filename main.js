@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     flower.addEventListener('mouseover', function() {
         flower.src = 'images/logo.png'; // Change image source on hover
-        flower.style.width = '120px'; 
+        flower.style.width = '100px'; 
         flower.classList.add('no-rotate'); 
         headerContainer.style.backgroundColor = '#F9F9F9'; // Change background color on hover
     });
@@ -59,7 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const navMenu = document.getElementById('nav-menu-mobile');
     const navLinks = document.querySelectorAll('.nav-link');
-
+    console.log('hamburgerIcon:', hamburgerIcon); // Log the hamburger icon
+    console.log('navMenu:', navMenu); // Log the nav menu
+    console.log('navLinks:', navLinks); // Log
     // Toggle the menu
     hamburgerIcon.addEventListener('click', function() {
         navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';

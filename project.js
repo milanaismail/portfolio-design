@@ -75,3 +75,4 @@ document.getElementById('flip-coin-mockup').addEventListener('click', function()
     window.location.href = './flip-coin/index.html';
 });
 
+
