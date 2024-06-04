@@ -93,7 +93,7 @@ h4{
     margin: 0 auto;
     width: 70%;
 }
-.project-image{
+/*.project-image{
     width: auto;
     height: 470px;
     background-size: cover;
@@ -101,6 +101,28 @@ h4{
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+}*/
+
+.project-image {
+    width: auto;
+    height: 470px;
+    background-size: contain; /* Change to contain */
+    background-repeat: no-repeat; /* Ensure no-repeat */
+    background-position: center; /* Center the image */
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden; /* Ensure hidden overflow */
+    background-color: #fe9dc0; 
+
+}
+
+/* Additional class to help visualize the border radius */
+.project-image::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 .project:hover .project-image {
     transform: scale(1.05);
@@ -248,8 +270,12 @@ h4{
 .flower.no-rotate {
     animation: none; /* Disable rotation for the logo */
 }
+.hamburger__nav{
+    display: none;
 
+}
 .nav-menu-mobile {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -286,6 +312,12 @@ h4{
     .nav-menu-desktop{
         display: none;
     }
+    .hamburger__nav{
+        display: flex;
+    }
+    .nav-menu-mobile {
+        display: none;
+    }    
     .flower{
         width: 50px;
     }
@@ -330,5 +362,44 @@ h4{
     }
     .skills-wrapper {
         animation-duration: 5s;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 150px 0;
+    }
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 48px;
+        margin: 0 50px 20px 50px;
+    }
+    h3 {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 80px 0;
+        width: 80%;
+    }
+    .project-image {
+        height: 350px;
+    }
+    .about-me-content p {
+        font-size: 24px;
+        width: 80%;
+    }
+    .skills p {
+        font-size: 30px;
+    }
+    .skills-wrapper {
+        animation-duration: 7s;
     }
 }

@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerIcon = document.getElementById('hamburger-icon');
-    const navMenu = document.getElementById('nav-menu');
+    const navMenu = document.getElementById('nav-menu-mobile');
     const navLinks = document.querySelectorAll('.nav-link');
 
     // Toggle the menu
