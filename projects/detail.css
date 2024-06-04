@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body{
     background-color: #F9F9F9;
     margin: 0;
@@ -94,15 +93,24 @@ a{
     gap: 24px;
     width: 100%;
 }
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 70%;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
 
+}
 .skills p {
     font-family: 'Lato', sans-serif; /* Use a specific font */
     text-transform: uppercase; /* Make the text uppercase */
     border: 2px solid #333333; /* Add a border */
     border-radius: 20px;
     padding: 20px;
-    margin: 0 10px; 
     display: inline-block;
+    margin: 0;
 }
 
 .project-description{
@@ -350,5 +358,8 @@ a{
     }
     .final-product-images img {
         width: 350px;
+    }
+    .project-image-container{
+        gap: 20px
     }
 }

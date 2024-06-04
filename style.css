@@ -130,7 +130,7 @@ h4{
     cursor: pointer;
 }
 .overlay span {
-    font-size: 24px; /* Adjust the font size */
+    font-size: 18px; /* Adjust the font size */
     font-family: 'Lato', sans-serif; /* Use a specific font */
     text-transform: uppercase; /* Make the text uppercase */
     border: 2px solid #F9F9F9; /* Add a border */
@@ -401,5 +401,8 @@ h4{
     }
     .skills-wrapper {
         animation-duration: 7s;
+    }
+    .overlay span {
+        font-size: 16px;
     }
 }
