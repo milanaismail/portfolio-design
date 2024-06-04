@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background-color: #EEF5FF;
+}
+
+.book{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.cover::before,
+.cover::after {
+    content: ''; 
+    position: absolute;
+    color: #86B6F6;
+    font-size: 245px; 
+    top: 45px;
+    transform: translateY(-50%) rotateY(180deg);
+}
+
+.cover::before{
+    content: 'b'; 
+    left: 110px; 
+}
+
+.cover::after{
+    content: 'k'; 
+    left: -250px; 
+}
+
+.book .cover{
+    z-index: 1;
+    transform: rotateX(10deg) rotateY(-180deg);
+}
+
+.book .page{
+    z-index: 2;
+}
+
+.back{
+    z-index: -2;
+}
+
+.cover, 
+.back{
+    height: 110px;
+    width: 100px;
+    background-color: #86B6F6;
+    border-radius: 2px 10px 10px 2px;
+    position: absolute;
+    box-shadow: 0px 0px 1px gray;
+    transform: rotateX(10deg);
+    transform-origin: center left; 
+ }
+
+ .page, .last-page{
+    height: 100px;
+    width: 90px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 2px 5px 5px 2px;
+    transform: rotateX(10deg);
+    transform-origin: center left;
+    z-index: -1;
+ }
+ .page:nth-child(2) {
+    animation: pageAnimation 5s forwards;
+    animation-delay: 0.2s; 
+}
+
+.page:nth-child(3) {
+    animation: pageAnimation 5s forwards;
+    animation-delay: 1s;
+}
+
+.page:nth-child(4) {
+    animation: pageAnimation 5s forwards;
+    animation-delay: 1.5s;
+}
+
+.page:nth-child(5) {
+    animation: pageAnimation 5s forwards;
+    animation-delay: 2s;
+}
+
+.page:nth-child(6) {
+    animation: pageAnimation 5s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes pageAnimation {
+    from {
+        transform: rotateX(10deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(10deg) rotateY(-180deg);
+    }
+}
+

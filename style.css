@@ -98,10 +98,9 @@ h4{
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
     padding: 104px 0;
-}
-.project{
-    margin: 0 70px;
-
+    gap: 40px;
+    margin: 0 auto;
+    width: 70%;
 }
 .project-image{
     width: auto;
@@ -115,6 +114,7 @@ h4{
 .project:hover .project-image {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 .overlay span {
     font-size: 24px; /* Adjust the font size */
