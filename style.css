@@ -153,6 +153,8 @@ h4{
     opacity: 0;
     transition: opacity 0.3s ease;
     flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .project-image:hover .overlay {
@@ -165,7 +167,6 @@ h4{
 }
 
 .about-me-content{
-    margin: 0 70px;
     display: flex;
     justify-content: center;
 }
@@ -304,66 +305,7 @@ h4{
 }
 
 
-/*mobile*/
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-    .nav-menu-desktop{
-        display: none;
-    }
-    .hamburger__nav{
-        display: flex;
-    }
-    .nav-menu-mobile {
-        display: none;
-    }    
-    .flower{
-        width: 50px;
-    }
-    .hamburger__nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 46px 25px 25px 25px;
-        align-items: center;
-    }
-    .fas.fa-bars{
-        font-size: 30px;
-        color: #333333;
-    }
-    .container {
-        padding: 100px 0;
-    }
-    h1 {
-        font-size: 80px;
-    }
-    h2 {
-        font-size: 36px;
-        margin: 0 30px 16px 30px;
-    }
-    h3 {
-        font-size: 24px;
-        margin: 10px 0;
-    }
-    .projects {
-        grid-template-columns: 1fr;
-        padding: 64px 0;
-        width: 90%;
-    }
-    .project-image {
-        height: 300px;
-    }
-    .about-me-content p {
-        font-size: 20px;
-        width: 90%;
-    }
-    .skills p {
-        font-size: 24px;
-    }
-    .skills-wrapper {
-        animation-duration: 5s;
-    }
-}
+
 
 /*tablet*/
 @media screen and (max-width: 1024px) {
@@ -404,5 +346,80 @@ h4{
     }
     .overlay span {
         font-size: 16px;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .nav-menu-desktop{
+        display: none;
+    }
+    .hamburger__nav{
+        display: flex;
+    }
+    .nav-menu-mobile {
+        display: none;
+    }    
+    .flower{
+        width: 50px;
+    }
+    .hamburger__nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 46px 25px 25px 25px;
+        align-items: center;
+    }
+    .fas.fa-bars{
+        font-size: 30px;
+        color: #333333;
+    }
+    .container {
+        padding: 40px 16px;
+    }
+    h1 {
+        font-size: 54px;
+    }
+    h2 {
+        font-size: 36px;
+        margin: 0 30px 16px 30px;
+    }
+    h3 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 64px 0;
+        width: 90%;
+    }
+    .project-image {
+        height: 300px;
+    }
+    .about-me-content p {
+        font-size: 20px;
+        width: 90%;
+    }
+    .skills p {
+        font-size: 24px;
+    }
+    .skills-wrapper {
+        animation-duration: 5s;
+    }
+    .arrow{
+        width: 40px;
+    }
+    .about-me-content{
+        margin: 0 16px;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+        margin: 16px;
+    }
+    .overlay {
+       display: none;
     }
 }

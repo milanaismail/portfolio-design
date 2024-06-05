@@ -23,3 +23,15 @@
      100% { background-position: -10402px 0;}
    }
    
+   @media (max-width: 768px) {
+      .scale {
+          width: 162.5px;  /* Half of the original width */
+          height: 119.5px;  /* Half of the original height */
+          background-size: 5201px 119.5px; /* Scale the background size proportionally */
+      }
+  
+      @keyframes move {
+          0% { background-position: 0 0; }
+          100% { background-position: -5201px 0; } /* Adjust the final background position accordingly */
+      }
+  }

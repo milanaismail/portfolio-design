@@ -67,3 +67,8 @@ img#changingImage {
     animation: changeImageSrc 1.5s forwards;
 }
 
+@media (max-width: 768px) {
+    img#changingImage {
+        width: 200px;
+    }
+}

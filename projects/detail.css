@@ -362,4 +362,27 @@ a{
     .project-image-container{
         gap: 20px
     }
+    h1{
+        font-size: 24px;
+    }
+    .skills p {
+        padding: 12px;
+    }
+ 
+}
+
+@media screen and (max-width: 400px){
+    .moodboard-image img{
+        width: 250px;
+    }
+    .wireframe-images img{
+        width: 250px;
+    }
+    .low-fi-prototype-images img, .high-fi-prototype-images img{
+        width: 100px;
+    }
+    .final-product-images img {
+        width: 250px;
+    }
+   
 }

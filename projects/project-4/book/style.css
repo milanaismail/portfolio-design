@@ -109,3 +109,29 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+    .cover, 
+    .back{
+        height: 60px;
+        width: 50px;
+    }
+
+    .cover::before,
+    .cover::after {
+        font-size: 120px;
+        top: 25px;
+    }
+
+    .cover::before{
+        left: 55px; 
+    }
+
+    .cover::after{
+        left: -120px; 
+    }
+
+    .page, .last-page{
+        height: 50px;
+        width: 40px;
+    }
+}
